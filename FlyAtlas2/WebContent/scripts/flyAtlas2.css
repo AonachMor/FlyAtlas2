@@ -1,0 +1,1879 @@
+	/* flyAtlas2.css 27.01.2025 */
+
+/*-- top and bottom padding needed if wrapper has outline ---*/
+body
+{
+	font-size: 100%;
+	color: #000000; background-color: #ffffff;
+	padding-top: 20px; padding-bottom: 15px;
+}
+
+h1 
+{
+/* 	text-align: center; */
+	text-align: left;
+	font-family: "Arial", sans-serif;
+	color: #ffffff;	
+	font-size: 250%;
+	padding: 0px;
+	margin-bottom: 20px;
+}
+
+h2
+{
+	text-align: center;
+	font-family: "Arial", sans-serif;
+	color: #003050;
+	font-size: 125%;
+}
+
+/* h2 link text: current and link */
+h2 .current 
+{
+	color: #003050;
+	text-decoration: none;
+	padding-right: 10px; padding-left: 10px;
+}
+
+h2 a.linkPage 
+{
+	color: #235282;
+	text-decoration: none;
+	padding-right: 10px; padding-left: 10px;
+}
+
+h2 a.linkPage:visited 
+{
+	color: #235282;
+	text-decoration: none;
+	padding-right: 10px; padding-left: 10px;
+}
+
+h3 
+{
+	font: 115% "Arial", sans-serif;
+	color: #000000; background-color: #ffffff;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+/*------- para No indent --------*/
+p
+{
+	font: 100% "Verdana", "Helvetica", "Arial", sans-serif;
+	text-align: left; 
+	line-height: 150%; 
+	text-indent:0px;
+	margin-bottom: 12px; margin-top: 12px;
+}
+
+a
+{
+	color:#235282;
+	text-decoration:none;
+}
+
+a:visited
+{
+	color:#235282;
+	text-decoration:none;
+}
+
+a:hover
+{
+	color: #486ca0; background-color: transparent;
+	outline: none; text-decoration: none;
+}
+
+a:active
+{
+	color:#6586a7;
+	text-decoration:none;
+}
+
+img
+{
+	border: 0px solid white;
+}
+
+img.shrinkfit 
+{
+	max-width:100%; 
+	height: auto;
+}
+
+/* Centered 850px wrapper (pos relative removed for autocomplete) */
+#wrapper 
+{
+	background-color: #ffffff;
+	max-width: 850px;
+	min-width: 700px;
+	border: 2px solid #003050;
+	/* border-radius: 10px; */
+	padding-right: 20px; padding-left: 20px;
+	padding-bottom: 20px; padding-top: 0px;
+	margin: 0 auto;		/* for centring */
+}
+
+/* holds title (190px high) and menus for standard screen size */
+#upper
+{
+	background: #01092c;
+	background-image: url("../images/titleFA2.jpg");
+	background-repeat: no-repeat;
+	margin-left: -20px; margin-right: -20px;
+	border: 1px solid #333333;
+	height: 190px;
+}
+/* holds two menus at right of title bar */
+.menuContainer
+{
+	background: transparent;
+	color: #ffffff;
+	width: 280px;
+	height: 190px;
+	float: right;
+	font: 125% "Arial", sans-serif;
+	font-weight: bold;
+}
+.menuContainer a
+{
+	color: #ffffff;	
+}
+.menuContainer ul
+{
+ 	list-style:none;
+ 	margin-left: -40px;
+ 	margin-top: 10px;
+ 	line-height: 200%;
+}
+/* left menu */
+.menuL
+{
+	background: transparent;
+	width: 140px;
+	height: 190px;	
+	float: left;
+}
+/* right menu */
+.menuR
+{
+	background: transparent;
+	width: 140px;
+	height: 190px;
+	float: right;
+}
+
+/* Current (selected) page in full menu */
+.current 
+{
+	color: #6e90ad;
+	text-decoration: none;
+}
+
+/* Replaces title and menus for phone, except for index */
+#topStrip
+{
+	display: none;
+}
+
+#topStripI
+{
+	display: none;
+}
+
+#menuI
+{
+	display: none;
+}
+
+#title625
+{
+	display: none;
+}
+
+#title500
+{
+	display: none;
+}
+
+#title400
+{
+	display: none;
+}
+
+/* Wrap controls in grey rectangle */
+#controls
+{
+	font: 75% "Verdana", "Helvetica", "Arial", sans-serif;
+	text-align: left; line-height: 150%;
+	border: 1px solid #2d5571;
+	padding-left: 20px; padding-right: 20px;
+	padding-top: 10px; padding-bottom: 10px;
+}
+
+input[type=text]
+{
+	width: 250px;
+	margin-right: 20px;
+}
+
+/*  mimics p css on a div */
+div.standard
+{
+	line-height: 150%;
+	margin-bottom: 12px; margin-top: 12px;
+}
+
+/*  split controls into two columns, right allows button on right */
+#leftControl
+{
+	width: 75%;
+	float: left;
+}
+#rightControl
+{
+	width: 20%;
+	float:right;
+	text-align:right;
+}
+
+		/* for holding gene info */
+
+/* Wrap Gene info so stands out */
+.geneInfoSet
+{
+	border: 1px solid #999999; 
+	padding:5px;
+	padding-left: 10px; 
+	background-color:#eeeeee;
+	overflow: auto;
+}
+
+.geneInfo 
+{
+	float: left;
+	text-align: left;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+.infoCaption
+{
+	font-size: 75%;
+	font-weight: bold;
+	color: #666666;
+	line-height: 110%;
+}
+
+.infoContent
+{
+	font-size: 100%;
+	font-weight: bold;
+	color: #333333;
+	line-height: 110%;
+	padding-left: 10px;
+}
+
+/* for span with up-down arrows */
+.infoContent.onOff
+{
+	/*font-size:26px;*/
+	font-size: 215%;
+	color: #235282;
+	text-shadow: 3px 3px 3px #999999;
+}
+
+/* Similar to above but modified for summaries */
+
+.summarySet
+{
+	border: 1px solid #999999; 
+	border-radius: 5px;
+	padding:5px;
+	padding-left: 10px; 
+	background-color: transparent;
+	overflow: auto;		/* so container expands for long content */
+}
+
+.summary 
+{
+	float: left;
+	text-align: left;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+.summaryTitle
+{
+	font-size: 120%;
+	font-weight: normal;
+	color: #333333;
+	line-height: 200%;
+	/* padding-left: 10px; */
+}
+
+.summaryButton
+{
+	font-size: 100%;
+	font-weight: bold;
+	color: #000000;
+	line-height: 110%;
+	padding-left: 10px;
+}
+
+.summaryButton.onOff
+{
+	font-size: 215%;
+	color: #000000;
+	text-shadow: 3px 3px 3px #999999;
+}
+
+#summaryList
+{
+	clear:both; 
+	margin-left:40px; 
+	margin-top:40px;
+}
+
+
+/* Explanation etc - larger than rest of text */
+.leftTHead
+{
+	width:450px;
+	font: 115% "Verdana", "Helvetica", "Arial", sans-serif;
+	font-weight: bold;
+	text-align: left; line-height: 150%;
+	padding-top: 5px; padding-bottom: 5px;	
+}
+
+.rightTHead
+{
+	width:350px; 
+	float:right; 
+	font: 115% "Verdana", "Helvetica", "Arial", sans-serif;
+	text-align:right; line-height: 150%;
+	padding-top: 5px; padding-bottom: 5px;
+}
+
+
+/*redundant?*/
+/*
+.sectionTitle
+{
+	clear:both;
+	font: 115% "Verdana", "Helvetica", "Arial", sans-serif;
+	font-weight: bold;
+	text-align: left; line-height: 150%;
+	padding-left: 0px; padding-right: 0px;
+	padding-top: 10px; padding-bottom: 0px;	
+}
+*/
+
+.explanation
+{
+	font: 90% "Verdana", "Helvetica", "Arial", sans-serif;
+	text-align: left; line-height: 150%;
+	padding-left: 20px; padding-right: 20px;
+	padding-top: 20px; padding-bottom: 10px;
+}
+
+.explanation2
+{
+	font: 90% "Verdana", "Helvetica", "Arial", sans-serif;
+	text-align: left; line-height: 150%;
+	padding-left: 20px; padding-right: 20px;
+	padding-top: 20px; padding-bottom: 10px;
+}
+
+.explanation p
+{
+	text-indent: 20px; line-height: 120%;
+	margin-bottom: 0px;
+}
+
+.linkText
+{
+	font: 115% "Verdana", "Helvetica", "Arial", sans-serif;
+	text-align: right; line-height: 150%;	
+	padding-top: 10px; padding-right: 20px;
+}
+
+.explanation a
+{
+	color:#235282;
+	text-decoration:none;
+}
+
+/* Variant of explanation with no bottom padding */
+.summary
+{
+	padding-bottom:0;
+}
+
+
+.ambiguity
+{
+	font: 100% "Verdana", "Helvetica", "Arial", sans-serif;
+	text-align: left; line-height: 150%;
+	padding-left: 0px; padding-right: 0px;
+	padding-top: 5px; padding-bottom: 10px;
+	clear:both;
+}
+
+.clearer
+{
+	clear:both;
+}
+
+/* drop-down auto-suggest 'menu' - z puts in front of bar graphs etc */
+#popup
+{
+	z-index: 10;
+}
+
+/* changed from id because of multiple instances - added top margin as removed external text */
+.results 
+{
+	font: 75% "Verdana", "Helvetica", "Arial", sans-serif;
+	text-align: left; line-height: 150%;
+	border: 1px solid #2d5571;
+	/* border-radius: 10px; */
+	padding-left: 20px; padding-right: 20px;
+	padding-top: 10px; padding-bottom: 10px;
+	margin-top: 30px;
+}
+
+.leftPadSelect
+{
+	padding-left: 50px;
+}
+
+.rightPad5
+{
+	padding-right: 5px;
+}
+.rightPad10
+{
+	padding-right: 10px;
+}
+.rightPad15
+{
+	padding-right: 15px;
+}
+.rightPad20
+{
+	padding-right: 20px;
+}
+
+/* standoff between select max displayed and search button */
+#maxdisplayed
+{
+	margin-right: 50px;
+}
+
+/* for span with error value (smaller and initially hidden) */
+.plusMinus
+{
+	font-size: 80%;
+	line-height: 150%;
+	display: none;
+}
+
+/* for non-initial input label, providing stand-off to left and right and float as controls re-adjust*/
+.lableft
+{
+	margin-left: 15px;
+	margin-right: 4px;
+}
+
+/* As for .lableft, but changes for mobile*/
+.lableftNobile
+{
+	margin-left: 15px;
+	margin-right: 4px;
+}
+
+/* hide/show ids */
+#visible
+{
+}
+
+#hideme p
+{
+	text-align:center;
+}
+
+/* hide-show class for multiple results */
+.conceal
+{
+	display:none;
+}
+
+/* STYLEs APPLIED TO HELP SECTION */
+
+.helpSec
+{ 
+	font: 100% "Verdana", "Helvetica", "Arial", sans-serif; 
+	text-align: left;
+	line-height: 150%;
+	border: 1px solid #2d5571;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 20px;
+}
+.helpTitle
+{
+	font-size: 100%;
+	font-weight: bold;
+	color: #235282;
+}
+/* for span with up-down arrows */
+.helpTitle.onOff
+{
+	text-shadow: 3px 3px 3px #999999;
+}
+.helpSubT
+{
+	font-size: 80%;
+	font-weight: bold;
+	color: #235282;
+	margin-left: 30px;
+	line-height: 180%;
+}
+/* for span with up-down arrows */
+.helpTitle.onOff
+{
+	text-shadow: 3px 3px 3px #999999;
+}
+.helpContent
+{
+	font-size: 80%;
+	line-height: 150%;
+	margin-left: 43px;
+	line-height: 180%;	
+}
+
+.url
+{
+	font-size: 125%;
+	font-family: monospace;
+	text-indent: 20px;
+	margin-top:0;
+	margin-bottom:0;
+	overflow-x: auto;
+}
+
+.colour1
+{
+	color: #ff0000;
+}
+.colour2
+{
+	color: #0000ff;
+}
+
+/* STYLE APPLIED TO GENE RESULT TABLE(S) */
+
+.geneR 
+{
+	margin-top: 6px;
+	width: 100%;
+	border-collapse: collapse;
+	font-family: "Arial", sans-serif;
+	background-color: #ffffff;
+	font-size: 115%;
+}
+
+
+/* right align table cells as default */
+table.geneR 
+{
+	table-layout: fixed;
+	text-align: right;
+	background-color: #ffffff;
+}
+
+/* center th cells as default */
+.geneR th 
+{
+	width: 17%;
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+	color: #ffffff; 
+	background-color: #06335d;
+	border: 1px solid #999999;
+	border-top: 1px solid #999999;
+	/* Prevent text overflow if showing M v. F */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* right pad td cells as default */
+.geneR td
+{
+	padding-top: 3px; padding-bottom: 3px;
+	padding-left: 10px; padding-right: 10px;
+	border: 1px solid #999999;
+	background-color: #ffffff;
+}
+
+
+/* first and second column of td cells has left-align and left pad and c9dae5 originally */
+.geneR tr > td:first-child 
+{
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 3px;
+	color: #333333; 
+	background-color: #eff9ff;
+  	max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* small greyed-out text */
+.pending
+{
+	color: #cccccc;
+	cursor: auto;
+	font-size: 85%;
+}
+
+	/* STYLE APPLIED TO TRANSCRIPT RESULT TABLE(S)  */
+	
+.transcriptR
+{
+	width: 100%;
+	font-family: "Arial", sans-serif;
+	font-size: 90%;
+}
+
+/* right align table cells as default */
+table.transcriptR 
+{
+	table-layout: fixed;
+	background-color: #ffffff;
+	border: 1px solid #000000; 
+	border-spacing: 1px;
+}
+
+/* center th cells as default */
+.transcriptR th 
+{
+	text-align: center;
+	font-weight: normal;	
+	color: #ffffff;
+	background-color: #06335d;
+	border-bottom: 1px solid #000000;
+}
+
+.transcriptR td
+{
+	background-color: #ffffff;
+}
+
+/* set widths of header row */
+
+.transcriptR tr th:first-child 
+{
+	width: 20%;
+}
+
+.transcriptR tr th:nth-child(2)
+{
+	width: 30%;
+	color: #ffffff; 
+	background-color: #06335d;
+}
+.transcriptR tr th:nth-child(3)
+{
+	width: 32%;
+	color: #ffffff; 
+	background-color: #06335d;
+}
+.transcriptR tr th:nth-child(4)
+{
+	width: 18%;
+	color: #ffffff; 
+	background-color: #06335d;
+}
+
+/* first two columns of results td have left-align and padding */
+.transcriptR tr td:first-child 
+{
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.transcriptR tr td:nth-child(2) 
+{
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-right: 1px solid #000000;
+}
+
+/* centre td cells of second row and remove padding — must come after prev left align */
+.transcriptR tr:nth-child(2) td
+{
+	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-bottom: 1px solid #000000;
+}
+
+/* Table cell highlighting styles (suffix G for Gene, T for Transcript */
+
+td.outlineG
+{
+	border: 2px solid rgb(255, 0, 0);
+}
+td.outlineT
+{
+	border-left: 2px dotted rgb(255, 0, 0);
+	border-right: 2px dotted rgb(255, 0, 0);
+}
+td.highlightT
+{
+	color: #ffffff;
+	background-color: #ff0000;	
+}
+table.pointer
+{
+	cursor: pointer;	
+}
+tr.noPointer
+{
+	cursor: auto;
+}
+td.noPointer
+{
+	cursor: auto;
+}
+td.lVacant
+{
+	border-right:1px solid white;		
+	cursor: auto;		
+}
+
+/*  as  for noPointer but with different class name for targetting hide/show */
+tr.wholesome
+{
+	cursor: auto;
+}
+
+	/* STYLE APPLIED TO MIDGUT GENE RESULT TABLE(S)  */
+/* this style is applied to div enclosing *replicate* results tables */
+.mgGeneR
+{
+	margin-top: 6px;
+	width: 100%;
+	border-collapse: collapse;
+	font-family: "Arial", sans-serif;
+	background-color: #ffffff;
+	font-size: 100%;
+}
+
+/* right align table cells as default */
+table.mgGeneR 
+{
+	table-layout: fixed;
+	text-align: right;
+	border: 1px solid #E6FFF5;
+	background-color: #ffffff;
+	border-bottom: 2px solid #999999;
+}
+
+/* center th cells as default */
+.mgGeneR th 
+{
+	width: 17%;
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+	color: #ffffff; 
+	background-color: #06335d;
+	border: 1px solid #999999;
+	border-top: 2px solid #999999;
+	border-bottom: 2px solid #999999;
+		/* Prevent text overflow */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* right pad td cells as default */
+.mgGeneR td
+{
+	padding-top: 3px; padding-bottom: 3px;
+	padding-left: 20px; padding-right: 20px;
+	border: 1px solid #999999;
+	background-color: #ffffff;
+}
+
+/* first and last column of td cells has left-align and left pad */
+.mgGeneR tr > td:first-child 
+{
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 3px;
+				/* Prevent text overflow */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mgGeneR tr > td:nth-child(7)
+{
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 3px;
+}
+
+/* apply stronger borders where necessary */
+
+.mgGeneR tr td:nth-child(1)
+{
+	border-right: 2px solid #999999;
+	border-left: 2px solid #999999;
+}
+
+.mgGeneR tr th:nth-child(1)
+{
+	border-right: 2px solid #999999;
+	border-left: 2px solid #999999;
+}
+
+.mgGeneR tr td:nth-child(4)
+{
+	border-right: 2px solid #999999;
+}
+
+.mgGeneR tr th:nth-child(4)
+{
+	border-right: 2px solid #999999;
+}
+
+.mgGeneR tr td:nth-child(7)
+{
+	border-right: 2px solid #999999;
+}
+
+.mgGeneR tr th:nth-child(7)
+{
+	border-right: 2px solid #999999;
+}
+
+	/* STYLE APPLIED TO MIDGUT TRANSCRIPT RESULT TABLE(S)  */
+.mgTransR 
+{
+	margin-top: 6px;
+	width: 100%;
+	border-collapse: collapse;
+	font-family: "Arial", sans-serif;
+	background-color: #ffffff;
+	font-size: 100%;
+}
+
+/* right align table cells as default */
+table.mgTransR 
+{
+	table-layout: fixed;
+	text-align: right;
+	border: 1px solid #E6FFF5;
+	background-color: #ffffff;
+}
+
+/* center th cells as default */
+.mgTransR th 
+{
+	width: 17%;
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+	color: #ffffff; 
+	background-color: #06335d;
+	border: 1px solid #999999;
+	border-top: 1px solid #999999;
+}
+
+/* last th cell has stronger right border */
+.mgTransR tr th:nth-child(7)
+{
+	border-right: 1px solid #999999;
+}
+
+.mgTransR tr td:nth-child(2)
+{
+	border-right: 2px solid #999999;
+}
+
+.mgTransR tr th:nth-child(2)
+{
+	border-right: 2px solid #999999;
+}
+
+/* right pad td cells as default */
+.mgTransR td
+{
+	padding-top: 3px; padding-bottom: 3px;
+	padding-left: 20px; padding-right: 20px;
+	border: 1px solid #999999;
+}
+
+/* first and second column of td cells has left-align and left pad */
+.mgTransR tr > td:first-child 
+{
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 3px;
+		/* Prevent text overflow */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mgTransR tr > td:nth-child(2)
+{
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 3px;
+}
+
+		/* Feedbback form */
+		
+/* provides padding for inserted text on feedback page equivalent to that on results */
+#insert
+{
+	color: #000000; background-color: #ffffff;
+	padding-left: 20px; padding-right: 20px;
+	padding-top: 20px; padding-bottom: 10px;
+}
+
+.formIntro
+{
+	/*font: 14px Arial, sans-serif;*/
+	font: 90% "Arial", sans-serif;
+	text-align: left; line-height: 150%;
+	margin-left: 5px; padding-bottom: 10px;
+}
+
+/*controls width of feedback form in relation to wrapper and text size*/
+.feedForm
+{
+	width: 50%;
+	font-size: 80%;
+}
+
+.formField
+{
+	width: 100%;
+	color: #000000; background-color: #e7f2f9; 
+	border: solid #999999 1px;
+	margin-bottom: 5px;
+}
+
+.formArea
+{
+	width: 100%;
+	color: #000000; background-color: #e7f2f9;
+	border: solid #999999 1px;
+}
+
+.formLabel
+{
+	font-family: "Arial", sans-serif;
+	font-size: 100%; 
+	text-align: left; line-height: 150%;
+	margin-bottom: 0; margin-top: 5px;
+}
+
+	/* positions link image on line */
+
+.linkImg
+{
+	padding-left: 20px;
+	padding-top: 15px; 
+}
+
+.downloadImg
+{
+	padding-left: 20px;	
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/*--------- Styles for floating window from Flannigan widths set in styles -------------*/
+
+div.indexWindow		/* Containing-div for index - fixed position */
+{
+	position: fixed; right: 50px; top: 300px;
+	height: 250px;   		
+	border-top: 1px solid #333333;  
+	border-left: 1px solid #333333;
+	border-right: 1px solid #444444;
+	border-bottom: 1px solid #444444;
+	z-index: 50;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #888888;
+}
+
+div.indexBar	/* Dragbar for index with closebox */
+{
+	height: 18px;  	/* 16px + padding and borders */
+	color: #ffffff;
+	background-color: #003050;
+	border-bottom: groove gray 2px; /* Border on bottom only */
+	padding: 3px 5px 2px 5px;  		/* Clockwise: top, right, bottom, left */
+	font-family: verdana, sans-serif; 
+	font-size: 115%; font-weight: bold; 
+	text-align: center;
+	cursor: move;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+
+}
+
+div.indexContent	/* Div for text content. Height diff gives bottom */
+{  
+	height: 215px;             /* ori 255=265px total - 25px titlebar - 10px padding */
+	padding: 5px;              /* Allow space on all four sides */
+	padding-left: 15px;
+	overflow: auto;            /* Give us scrollbars if we need them */
+	background-color: #ffffff;
+	opacity: .92;              /* DOM style for transparency */
+	filter: alpha(opacity=92); /* Transparency for IE */
+	text-align: left;   
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.closebox
+{
+	text-align: right;
+	margin-bottom: 0px;
+	width: 20px;
+	float: right;
+}
+
+.closebox a 
+{
+	font-size: 75%; font-weight: bold;
+	color: #003050; background-color: #ffffff; 
+	border: 1px solid #000000;
+	outline: none; text-decoration: none;
+}
+
+.closebox a:hover
+{
+	color: #ffffff; background-color: #003050;
+	border: 1px solid #003050;
+}
+
+p.help /* Text content para style */
+{
+	font: 100% "Verdana", "Helvetica", "Arial", sans-serif;
+	color: #000000; background-color: #ffffff;
+	text-align: left; line-height: 150%;
+	margin-bottom: 5px; margin-top: 0px;
+	text-indent: 0px;
+}
+img.help
+{
+	float: right; 
+	padding-left:20px; 
+	padding-top:5px; 
+	padding-right:10px;
+}
+
+/* css trick to generate ringed link ? of specific sizes */
+
+.infolink:before
+{
+	content: '?';
+	display: inline-block;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+	width: 1.8ex;
+	height: 1.8ex;
+	font-size: 1.4ex;
+	line-height: 1.8ex;
+	border-radius: 1.2ex;
+	margin-right: 4px;
+	padding: 1px;
+	color: #003050;
+	background: white;
+	border: 1px solid #003050;
+	text-decoration: none;
+}
+
+.infolink:hover:before
+{
+	color: white;
+	background: #003050;
+	border-color: white;
+	text-decoration: none;
+}
+
+span#master
+{
+	padding-left: 10px;
+}
+
+/* scroll up page button, initially invisible */
+
+#upButton 
+{
+	 display: none;
+	 position: fixed;
+	 bottom: 20px;
+	 right: 30px;
+	 z-index: 99;
+	 font-size: 100%;
+	 border: none;
+	 outline: none;
+	 background-color: #003050;
+	 color: white;
+	 cursor: pointer;
+	 padding-top: 15px;  padding-left: 15px; padding-right: 15px;
+	 padding-bottom: 10px;
+	 border-radius: 4px;
+}
+#upButton:hover 
+{
+	color: #999999;
+}	
+
+
+/* STYLE FOR HOME PAGE INTRODUCTION */
+.intro
+{
+	font: 90% "Verdana", "Helvetica", "Arial", sans-serif;
+	text-align: left; line-height: 150%;
+	padding-left: 20px; padding-right: 20px;
+	padding-top: 20px; padding-bottom: 10px;
+}
+
+.intro p
+{
+	text-indent: 0px;
+}
+
+.intro a
+{
+	color:#235282;
+	text-decoration:none;
+}
+
+#switchControls a
+{
+	color:#235282;
+	text-decoration:none;
+}
+
+#switchControls a:visited
+{
+	color:#235282;
+	text-decoration:none;
+}
+
+/* Hide turn text from all but smallest mobile devices */				
+.mobileTurn
+{
+	display: none;
+}
+
+/* Hide from non-mobile devices */
+.immobileHide
+{
+	display: none;
+}
+
+.immobileHideS
+{
+	display: none;
+}
+
+.mobileHide625
+{
+	display: inline;	
+}
+
+/* .mobileHide500
+{
+	display: inline;	
+} */	
+
+.mobileHide400
+{
+	display: inline;	
+}
+
+#mobileTargetG
+{
+	display: none;
+}
+#mobileTargetC
+{
+	display: none;
+}
+#mobileTargetT
+{
+	display: none;
+}
+
+/* adjustments for viewport width reaching wrapper width */
+@media screen and (max-width:800px)
+{
+	body
+	{
+		padding-top: 0; 
+	}
+	
+	#wrapper 
+	{
+		border: none;
+ 		min-width : 99%;
+		max-width : 99%;
+		width: 99%;	
+		padding-right: 0px; padding-left: 0px; padding-bottom: 5px;
+	}
+	
+	#upper
+	{
+		margin-bottom: 20px;	
+	}
+			
+	#controls
+	{
+		font-size: 70%;
+		line-height: 200%;
+	}
+	
+	.explanation
+	{
+		padding-top: 0px;
+	}
+	
+	input[type=text]
+	{
+		width: 60%;
+	}
+	
+	button
+	{
+		margin-top: 10px;
+	}
+	
+	.results 
+	{
+		padding-left: 10px; padding-right: 10px;
+	}
+	
+	.geneInfo 
+	{
+		float: none;
+		padding-bottom: 0px;
+	}
+	
+		/* tables */	
+	.geneR 
+	{
+		font-size: 100%;
+	}
+
+	table.geneR 
+	{
+		table-layout: fixed;
+		text-align: right;
+	}
+
+	/* center th cells as default */
+	.geneR th 
+	{
+		text-align: center;
+		padding-top: 3px; padding-bottom: 3px;
+		padding-left: 2px; padding-right: 2px;
+
+		max-width: 100%;
+		overflow: hidden;
+		text-overflow: clip;
+		white-space: nowrap;
+	}
+
+	/* right pad td cells as default */
+	.geneR td
+	{
+		padding-top: 1px; padding-bottom: 1px;
+		padding-left: 2px; padding-right: 5px;
+		overflow: hidden;
+	}
+	
+	.transcriptR
+	{
+		letter-spacing: 0;
+	}		
+	.mgTransR
+	{
+		letter-spacing: 0;	
+	}
+	
+	.transcriptR tr th:first-child 
+	{
+		width: 10%;
+	}
+
+	.transcriptR tr th:nth-child(2)
+	{
+		width: 33%;
+	}
+	.transcriptR tr th:nth-child(3)
+	{
+		width: 37%;
+	}
+	.transcriptR tr th:nth-child(4)
+	{
+		width: 20%;
+	}
+
+	.transcriptR tr td:first-child 
+	{
+		padding-left: 2px;
+		width: 10%;
+	}
+	
+	.mgTransR tr td:first-child 
+	{
+		padding-left: 2px;
+		width: 20%;
+	}
+	.mgTransR tr th:nth-child(2)
+	{
+		width: 0%;
+	}
+	
+	.transcriptR tr td:nth-child(2) 
+	{
+		color: #ffffff;	/* hack so can't see because of split header */
+	}	
+	.mgTransR tr td:nth-child(2) 
+	{
+		color: #ffffff;	/* hack so can't see because of split header */
+	}
+	.mgTransR tr th:nth-child(2) 
+	{
+		color: #06335d;	/* hack so can't see because of split header */
+	}
+
+	.transcriptR tr:nth-child(2) td
+	{		
+		max-width: 0;
+		overflow: hidden;
+		text-overflow: clip;
+		white-space: nowrap;
+	}	
+	.mgTransR tr:nth-child(2) td
+	{		
+		max-width: 0;
+		overflow: hidden;
+		text-overflow: clip;
+		white-space: nowrap;
+	}
+	.mgTransR tr:nth-child(2) th
+	{		
+		max-width: 0;
+		overflow: hidden;
+		text-overflow: clip;
+		white-space: nowrap;
+	}
+	
+	.transcriptR tr td:nth-child(1) 
+	{
+		overflow: visible;	
+	}	
+	.mgTransR tr td:nth-child(1) 
+	{
+		overflow: visible;	
+	}
+	
+	a
+	{
+		color:transparent;
+	}
+
+	a:visited
+	{
+		color:transparent;
+	}
+
+	a:hover
+	{
+		color: transparent;
+	}
+
+	a:active
+	{
+		color: transparent;
+	}
+	
+	.infoCaption
+	{
+		font-size: 80%;
+		line-height: 150%;
+	}
+	
+	.infoContent
+	{
+		font-size: 100%;
+		line-height: 180%;
+	}
+	
+	.infoContent a { color:#333333;}
+	.infoContent a:visited { color:#333333;}
+	.infoContent a:hover { color:#333333;}
+	.infoContent a:active { color:#333333;}
+	
+	
+	.infoContent.onOff
+	{
+		line-height: 120%;
+	}
+	
+	/* Form Elements*/
+	.feedForm
+	{
+		width: 65%;
+	}
+	
+	/* Show to mobile devices */
+	.immobileHide
+	{
+		display: block;
+	}
+		
+	/* hide from mobile devices */
+	.mobileHide
+	{
+		display: none;
+	}
+}
+
+/* adjustment for feedback forms */
+@media screen and (max-width:700px)
+{
+	/* Form Elements*/
+	.feedForm
+	{
+		width: 80%;
+	}
+	
+	.formLabel
+	{
+		display: none;
+	}
+	
+	.transcriptR
+	{
+		font: 90% "Archivo Narrow", "Arial";
+	}
+	
+	.mgTransR 
+	{
+		font: 100% "Archivo Narrow", "Arial";
+	}
+	
+	.mgGeneR
+	{
+		font: 100% "Archivo Narrow", "Arial";
+	}
+	
+	.mgTransR th 
+	{
+		font-weight: normal;
+	}
+	.mgGeneR th 
+	{
+		font-weight: normal;
+	}
+}
+
+/* adjustment (for phones) when too narrow for title image and menu */
+@media screen and (max-width:625px)
+{
+	/* suppress full title and menus */
+	#upper
+	{
+		display: none;
+	}
+	
+	/* simple top strip for phones with back arrow and name */
+	#topStrip
+	{
+		display: block;
+		overflow: hidden;	/* to prevent this outer div shrinking! */
+		font: 100% "Arial", sans-serif;
+		font-weight: bold;
+		color: white;
+		background-color: #072440;
+		line-height: 200%;
+		padding: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 15px;
+	}
+	#topStrip a
+	{
+		color: white;
+	}
+	#topL
+	{
+		float: left;
+		width: 15%;
+		font-size: 150%;
+	}
+	#topC
+	{
+		float: left;
+		width: 70%;	
+		text-align: center;
+	}
+	#topR
+	{
+		float:right;
+		width: 15%; 
+		text-align:right;
+		font-size: 150%;
+	}
+	#topStripI
+	{
+		display: block;
+		overflow: hidden;	/* to prevent this outer div shrinking! */
+		background-color: #072440;	
+		color: #ffffff;		
+		font: 220% "Arial", sans-serif;
+		font-weight: bold;
+		line-height: 170%;
+		text-align: left;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	#title625
+	{
+		display: block;
+	}
+	#menuI
+	{
+		display: block;	
+	}
+	#menuI ul
+	{
+		list-style:none;
+		margin-left: -20px;
+		margin-top: 20px;
+		margin-bottom: -10px;
+		font: 120% "Arial", sans-serif;
+		line-height: 170%;
+		font-weight: bold;
+	}
+	a.indexLink 
+	{
+		color: #072440;
+		text-decoration: none;
+	}
+	a.indexLink:visited 
+	{
+		color: #072440;
+		text-decoration: none;
+	}
+
+	/* left adjustment to (search) button for if it starts line on mobile */	
+	button
+	{
+		margin-top: 10px;
+		margin-left: -3px;
+	}
+	
+	.mobileHide625
+	{
+		display: none;	
+	}
+
+}
+
+@media screen and (max-width:500px)
+{
+	#title625
+	{
+		display: none;
+	}
+	#title500
+	{
+		display: block;
+	}
+	
+	/*Display target div for location hash (display:block doesn't bring to top of page)*/
+	#mobileTargetG
+	{
+		display: inline;
+	}
+	#mobileTargetC
+	{
+		display: inline;
+	}
+	#mobileTargetT
+	{
+		display: inline;
+	}
+	
+	.mobileHide500
+	{
+		display: none;	
+	}
+	
+	.mgTransR 
+	{
+		font: 95% "Archivo Narrow", "Arial";
+	}
+		
+	.mgTransR tr > td:first-child 
+	{
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+	
+	.mgGeneR
+	{
+		font: 95% "Archivo Narrow", "Arial";
+	}
+	
+	.mgGeneR tr > td:first-child 
+	{
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+	
+	span#master
+	{
+		padding-left: 0;
+	}
+	
+	span#master::before
+	{
+		content:'\a';
+		/* white-space: pre */;
+	}
+	
+}
+
+/* adjustment for phones in portrait mode */
+@media screen and (max-width:400px)
+{
+	body
+	{
+		padding-top: 0; 
+	}
+	
+	h1
+	{
+		font-size: 200%;
+	}
+	
+	h2
+	{
+		line-height: 150%;
+	}
+	
+	#wrapper 
+	{
+		border: none;
+		min-width : 99%;
+		max-width : 99%;
+		width: 99%;	
+		padding-right: 0px; padding-left: 0px; padding-bottom: 5px;
+	}
+	
+	.explanation
+	{
+		padding-top: 0px;
+	}
+	
+	#controls
+	{
+		font-size: 65%;
+		line-height: 250%;
+	}
+	
+	input[type=text]
+	{
+		width: 60%;
+	}
+	
+	/* left adjustment to (search) button for if it starts line on mobile */
+	button
+	{
+		margin-top: 10px;
+		margin-left: -3px;
+	}
+	
+	#leftControl
+	{
+		width: 90%;
+		float: none;
+	}
+	#rightControl
+	{
+		width:90%;
+		float:none;
+		text-align:left;
+	}
+	
+	.results 
+	{
+		padding-left: 10px; padding-right: 10px;
+	}
+	
+	.geneInfo 
+	{
+		float: none;
+		padding-bottom: 0px;
+	}
+	
+	.infoContent.onOff
+	{
+		line-height: 120%;
+	}
+
+	/* tables */	
+	.geneR 
+	{
+		font-size: 100%;
+	}
+
+	table.geneR 
+	{
+		table-layout: fixed;
+		text-align: right;
+	}
+
+	/* center th cells as default */
+	.geneR th 
+	{
+		text-align: center;
+		padding-top: 3px; padding-bottom: 3px;
+		padding-left: 2px; padding-right: 2px;
+
+		max-width: 100%;
+		overflow: hidden;
+		text-overflow: clip;
+		white-space: nowrap;
+		
+		font-weight: normal;
+		font-family: "Archivo Narrow", "Arial", sans-serif;
+	}
+
+	/* right pad td cells as default */
+	.geneR td
+	{
+		padding-top: 1px; padding-bottom: 1px;
+		padding-left: 2px; padding-right: 5px;
+		overflow: hidden;
+	}
+	
+	.transcript
+	{
+		display: none;
+	}
+	
+	.mgGeneR
+	{
+		font: 90% "Archivo Narrow", "Arial";
+	}
+	
+	.mgGeneR td
+	{
+		padding-top: 1px; padding-bottom: 1px;
+		padding-left: 2px; padding-right: 5px;
+	}
+	
+	.mgGeneR th 
+	{
+		text-align: center;
+		padding-top: 3px; padding-bottom: 3px;
+		padding-left: 2px; padding-right: 2px;
+	}
+			
+	.mgTransR 
+	{
+		font: 90% "Archivo Narrow", "Arial";
+	}
+	
+	.mgTransR td
+	{
+		padding-top: 1px; padding-bottom: 1px;
+		padding-left: 2px; padding-right: 5px;
+	}
+	
+	.mgTransR th 
+	{
+		text-align: center;
+		padding-top: 3px; padding-bottom: 3px;
+		padding-left: 2px; padding-right: 2px;
+	}
+	
+			/* Form Elements*/
+	.feedForm
+	{
+		width: 100%;
+	}
+	
+	/* hide from mobile devices */
+	.mobileHide
+	{
+		display: none;
+	}
+
+	/* hide from non-mobile devices */	
+	.immobileHide
+	{
+		display: block;
+	}
+	
+	.immobileHideS
+	{
+		display: block;
+	}
+	
+	.mobileHide400
+	{
+		display: none;	
+	}	
+	
+	.lableftNobile
+	{
+		margin-left: 0;
+		margin-right: 4px;
+	}
+	
+	/* Show turn text to small mobile devices only */		
+	.mobileTurn
+	{
+		display: block;
+		text-align: center;
+		font-style: italic;
+	}
+	
+	#title500
+	{
+		display: none;
+	}
+	#title400
+	{
+		display: block;
+	}
+}
+
+
+

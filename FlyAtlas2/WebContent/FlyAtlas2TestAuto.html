@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>FlyAtlas2 Test of autocomplete</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	 <script type="text/javascript" src="scripts/auto.js"></script>
+	 <link rel="stylesheet" type="text/css" href="scripts/auto.css"/>	
+</head>
+
+<body>
+<div >
+<p>
+Select ID Type and then start typing appropriate example.<br/>
+Autocomplete will kick in at a different stage, depending on ID type.
+</p>
+
+<p>
+<input type="radio" name="idtype" id="symbol" checked="checked"/> Gene Symbol (e.g. vkg)<br/>
+<input type="radio" name="idtype" id="name"/> Gene Name (e.g. viking)<br/>
+<input type="radio" name="idtype" id="cgnum"/> CG id (e.g. CG16858)<br/>
+<input type="radio" name="idtype" id="fbgn"/> FBgn/GeneID (e.g. FBgn0016075)<br/>
+<input type="radio" name="idtype" id="fbtr"/> FBtr/TranscriptID (e.g. FBtr0079036)<br/>
+</p>
+
+<p>
+Gene: <input type="text" autocomplete="off" size="40" id="inputField" style="height:15px;" onkeyup="findGene();"/>
+</p>
+
+<!-- start of autocomplete div -->
+<div style="position:absolute;" id="popup">
+<table id="menuTable" cellspacing="0" cellpadding="0">            
+<tbody id="menuTableBody"><tr><td></td></tr></tbody>
+</table>
+</div><!-- end of autocomplete div -->
+
+</div>
+
+</body>
+</html>
+
