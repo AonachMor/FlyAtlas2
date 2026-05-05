@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>FA2Direct Test</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>Enter FlyBase ID &amp; Output type</h1>
+<form action="/FA2Direct/index.html" method="get">
+<p><input type="text" name="fbgn" size="20"> FBgn (e.g. FBgn0016038 for a gene, FBgn0262174 for a microRNA)</p>
+<!-- <p><input type="text" name="tableOut" size="20"> ‘gene’ ‘mir’ or ‘transcript’ outputs</p> -->
+<p>
+<select name="tableOut">
+<option value="gene">Gene</option>
+<option value="mir">Mir</option>
+<option value="transcriptGene">Transcript</option>
+<option value="transcriptMir">Mir Transcript</option>
+</select>
+ ‘gene’ or ‘transcript’ output
+</p>
+<p><input type="submit" name="submit" value="Go"></p>
+</form>
+</body>
+</html>
