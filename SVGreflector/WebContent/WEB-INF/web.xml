@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>SVGreflector</display-name>
+  <servlet>
+    <description></description>
+    <display-name>SVGreflector</display-name>
+    <servlet-name>SVGreflector</servlet-name>
+    <servlet-class>SVGreflector</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SVGreflector</servlet-name>
+    <url-pattern>/SVGreflector</url-pattern>
+    <url-pattern>/index.html</url-pattern>
+    <url-pattern>/image.svg</url-pattern>
+  </servlet-mapping>
+</web-app>
