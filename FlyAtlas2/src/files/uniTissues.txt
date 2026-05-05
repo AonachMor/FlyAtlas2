@@ -1,0 +1,25 @@
+// uniTissues.txt - Input file for FlyAtlas2 (read by TissueCatalogue class) updated 03.08.2022
+
+// DisplayPosition	 UniTissueID	Reference	Description
+
+1	1001	% Head
+2	1002	% Eye
+3	1003	% Adult Brain / Larval CNS
+4	1004	% Thoracicoabdominal ganglion
+5	1005	% Crop
+6	1006	% Midgut
+7	1007	% Hindgut
+8	1008	% Malpighian Tubules
+9	1013	% Rectal pad 
+10	1010	% Salivary gland
+11	1009	% Fat body 
+12	1011	% Heart
+13	1019	% Trachea
+14	1016	% Ovary
+15	1017	% Virgin Spermatheca
+16	1018	% Mated Spermatheca
+17	1014	% Testis
+18	1015	% Accessory glands
+19	1012	% Carcass
+20	1050	% Garland cells
+21	1020	% Whole body

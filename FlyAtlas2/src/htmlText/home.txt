@@ -1,0 +1,15 @@
+<div class="intro"><!-- external text starts here -->
+
+<p>
+FLYATLAS 2 (flyatlas2.org) uses RNA-Seq to answer the question <em>“Where is my gene of interest expressed in Drosophila melanogaster?”</em>. One can search by gene, category, tissue or tissue-expression profile, and more detailed information is available for compartments of the midgut. Results are presented on the basis of gene or transcript, with separate data for male and female adult flies, and for larvae. Micro-RNA genes are also included.
+</p>
+
+<p>The facility is the result of a project in the Dow laboratory at the University of Glasgow, supported by the BBSRC.  The work is described in papers in the Database issues of Nucleic Acids Research for  <a href="javascript:linkToPaper('https://doi.org/10.1093/nar/gkx976');" title="Show NAR 2018 paper in new window">2018</a> and <a href="javascript:linkToPaper('https://academic.oup.com/nar/article/50/D1/D1010/6414055?guestAccessKey=c6950860-16a6-41e5-8db1-03ba89e5d811');" title="Show NAR 2022 paper in new window">2022</a>. </p>
+
+<p>
+The original RNA-Seq data have now been reprocessed against version NCBI:GCF_000001215.4 of the <em>Drosophila</em> reference genome, which includes annotations from FlyBase Release 6.54 (December 2023).
+</p>
+
+</div>
+
+<!-- end of external text-->

@@ -1,0 +1,21 @@
+
+<div id="insert">
+<div class="formIntro">
+We welcome your feedback on FlyAtlas 2. Let us know of any questions or problems that you may have, or any suggestions for improving the facility.
+</div>
+<form method="post" action="https://motif.mvls.gla.ac.uk/cgi-bin/FormMail.cgi">
+	<div class="feedForm">
+		<input type="hidden" name="subject" value="FlyAtlas 2 Feedback" />
+		<input type="hidden" name="recipient" value="1" />
+		<input type="hidden" name="redirect" value="https://motif.mvls.gla.ac.uk/thanks/FlyAtlas2Thanks.html" />
+		<p class="formLabel">Name</p>
+		<input type="text" name="realname" class="formField" placeholder="Name" />
+		<p class="formLabel">E-mail address</p>
+		<input type="text" name="email" class="formField" placeholder="E-mail address" />
+		<p class="formLabel">Feedback</p>
+		<textarea name="message" rows="6" cols="28" class="formArea" placeholder="Feedback"></textarea>
+		<br />
+		<input type="submit" value="Submit" class="formButton" />
+	</div>
+</form>
+</div>

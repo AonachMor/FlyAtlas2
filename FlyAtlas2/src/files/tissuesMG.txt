@@ -1,0 +1,9 @@
+// TissuesMG.txt - Input file for MidgutAtlas TissueLists class
+
+// DisplayPosition	 TissueID
+
+1	50
+2	51
+3	52
+4	53
+5	54

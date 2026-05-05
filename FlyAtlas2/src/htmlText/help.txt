@@ -1,0 +1,264 @@
+<!-- 1st Help section: About FA2 -->
+<div class="helpSec">
+<div class="helpTitle">
+<a href="javascript:toggleConcealed('bt1','hs1','&#9658;','&#9660');" title="reveal help"><span id="bt1" class="helpTitle onOff">▶</span></a> About FlyAtlas 2
+</div>
+
+<div id="hs1" class="conceal helpContent">
+FlyAtlas 2 shares with the original FlyAtlas (Nature Genetics [2007] 39, 715–720) the objective of allowing one to find which genes are expressed in individual tissues of <em>Drosophila melanogaster</em>. The flies and tissues are the same as before, but in FlyAtlas 2 the gene transcripts have been quantified by RNA-Seq rather than hybridization to microarray. This extends the information from overall expression of genes to that of specific RNA transcripts. Approximately 17,400 genes and 35,000 transcripts are represented. Links to the original micorarray data are available for comparison.
+</div><!-- end of conceal div -->
+</div>
+<!-- End of 1st Help section -->
+
+<!-- 2nd Help section: General Instructions for Use -->
+<div class="helpSec">
+<div class="helpTitle">
+<a href="javascript:toggleConcealed('bt2','hs2','&#9658;','&#9660;');" title="reveal help"><span id="bt2" class="helpTitle onOff">▶</span></a> General Instructions for Use
+</div>
+	<!-- 2.1 Main Search Types -->
+<div id="hs2" class="conceal">
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt2_1','hs2_1','&#9655;','&#9661;');" title="reveal help"><span id="bt2_1" class="helpTitle onOff">▷</span></a> Main Search Types</div>
+	<div id="hs2_1" class="conceal helpContent">
+	Three main types of search can be performed after selecting the appropriate section from the menu. <strong>Gene</strong> searches are made for a particular gene or list of genes using  the names or identifiers assigned by FlyBase; <strong>Category</strong> searches are made for protein-coding genes using descriptive terms that are part of their gene ontologies; and <strong>Tissue</strong> searches produce a list of the most abundant or enriched protein-coding or microRNA genes in a particular tissue.
+	</div>
+	<!-- 2.2 Autosuggest -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt2_2','hs2_2','&#9655;','&#9661;');" title="reveal help"><span id="bt2_2" class="helpTitle onOff">▷</span></a> Why You should use Autosuggest</div>
+	<div id="hs2_2" class="conceal helpContent">For every field in which a gene name or identifier is entered there is an autocomplete facility based on the entries in the database underlying FlyAtlas 2. The autosuggest for a Symbol or Name starts after two characters, that for an Annotation symbol starts after five characters, and that for a FlyBase ID after nine. There are two reasons that you should use this. The first is that gene names are, of necessity, case-sensitive because there are some distinct <em>Drosophila</em> genes that differ only by case. The second is to save yourself the frustration of making a query, only to be told that the gene is not in the database. If the gene is not in the autocomplete menu you can be sure that it is <em>not</em> in the database.</div>
+	<!-- 2.3 Greek Characters -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt2_3','hs2_3','&#9655;','&#9661;');" title="reveal help"><span id="bt2_3" class="helpTitle onOff">▷</span></a> Greek Characters in Input</div>
+	<div id="hs2_3" class="conceal helpContent">Autosuggest will add Greek characters (e.g. eIF-2β from eI), and will autocomplete after a single Greek character (e.g. βTub56D from β). Characters that start gene symbols or names are α β γ δ ε η ι κ λ θ ζ , and may be copied from here and pasted into a text box. Alternatively one can type the Latin equivalents (alpha, beta etc.).</div>
+		<!-- 2.4 Abundance and Enrichment -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt2_4','hs2_4','&#9655;','&#9661;');" title="reveal help"><span id="bt2_4" class="helpTitle onOff">▷</span></a> Abundance and Enrichment</div>
+	<div id="hs2_4" class="conceal helpContent">The term, <strong>abundance</strong>, used in the original FlyAtlas, is only used in the Tissue section of FlyAtlas 2. Elsewhere it replaced by the specific units, either FPKM (Fragments Per Kilobase of transcript per Million mapped reads), or in the case of microRNA genes by TPM (normalized counts per million). The two are not comparable. The <strong>enrichment</strong> is a measure of the abundance of a gene in a particular tissue relative to that in the whole fly. This allows one to determine whether the expression of a particular gene is tissue-specific or not. In order to avoid division by zero and misleading values of enrichment, in calculating the latter it is necessary to set abundance values for whole flies that fall below the background threshold to that of the threshold. (2 FPKM or 200 TPM). This may result in quantitative underestimations, so users should inspect the data carefully. Enrichments are not presented for individual transcripts. </div>
+	<!-- 2.12 Category Search -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt2_12','hs2_12','&#9655;','&#9661;');" title="reveal help"><span id="bt2_12" class="helpTitle onOff">▷</span></a> How the Category Search works</div>
+	<div id="hs2_12" class="conceal helpContent">The <em>default interface</em> for the Category Search is based solely on gene ontology (GO) terms obtained from http://geneontology.org. Those in FlyAtlas2 are drawn from a file (go-basic.obo) that provides a listing of each entry that includes an id and name, e.g.<br />
+id: GO:0000019<br />
+name: regulation of mitotic recombination<br />
+A FlyBase file (gene_association.fb) is available that lists the GO ids assigned to each gene, and data from both files have been incorporated into the FlyAtlas2 relational database, allowing each FBgn to be correlated with zero or more ‘GO names’. GO entries for which there is no related FBgn have been removed from the database.
+A FlyAtlas2 Category Search by ‘Category’ produces an autosuggest menu showing all the ‘GO names’ that include the letters typed, so that one may select one of interest. This does have the disadvantage that one cannot select multiple terms. If one chooses a ‘Free Search’, this includes all the corresponding GO names. The disadvantages here are that one may get very many ‘hits’ (or none) and that individual ‘GO names’ may sometimes contain the keyword in an overall context that is not relevant to one’s interest.
+<p>
+The <em>alternative interface</em> for the Category Search employs a different categorization — one derived from FlyBase ‘groups’. It offers a selection of 126 groups (ranging from 3 to 258 members) in a pull-down menu.  
+</p>
+</div>
+	<!-- 2.13 Profile Search -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt2_13','hs2_13','&#9655;','&#9661;');" title="reveal help"><span id="bt2_13" class="helpTitle onOff">▷</span></a> About the Profile Search</div>
+	<div id="hs2_13" class="conceal helpContent">The Profile Search compares the expression of one gene across different tissues with that of other genes in <em>Drosophila</em>, and reports those that are most similar. It determines either of two statistical values — the Pearson or Spearman correlation coefficient, <em>r</em>, explanation of which can be found on Wikipedia pages, e.g. https://en.wikipedia.org/wiki/Correlation_and_dependence. The output includes the values of <em>r</em> and of <em>p</em>, a statistical probability. The cut-off value for <em>r</em> can be set by the user before starting the search. Currently searches for microRNAs are not supported.<br />
+There are several options for the tissues used in constructing the profile (<em>see</em> below). The default — ‘adult and larval’ — is generally recommended, even though it lacks certain tissues because of computational memory restrictions. (Limiting common tissues to one sex also avoids bias to the adult.) The excluded tissues are present in the adult-only alternatives. The user should, of course, check that any alternative tissue selection used contains those tissues in which the query gene is expressed. 
+<br />
+	<img src="images/ProfileTissues.png" alt=""/><br />
+</div>
+
+	<!-- 2.14 Midgut Facility -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt2_14','hs2_14','&#9655;','&#9661;');" title="reveal help"><span id="bt2_14" class="helpTitle onOff">▷</span></a> The Midgut Facility</div>
+	<div id="hs2_14" class="conceal helpContent">The Drosophila larval midgut is composed of five regions of different pH: the neutral gastric caeca/anterior region, the acidic region, the neutral region, the slightly acidic transitional region, and the posterior alkaline region. We prepared an RNA-Seq library from all these five regions in the course of studies on this topic, and the data are presented in this separate section of FlyAtlas 2, together with a graphic indicating their anatomical locations. Please note that MicroRNA data are not available for these midgut regions.
+</div>
+
+		<!-- 2.5 Heat Maps -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt2_5','hs2_5','&#9655;','&#9661;');" title="reveal help"><span id="bt2_5" class="helpTitle onOff">▷</span></a> What the Colours Mean</div>
+	<div id="hs2_5" class="conceal helpContent">The colouring of cell backgrounds (heat mapping) is merely a visual aid to help users quickly identify the results of most interest. The colouring is not a surrogate for the numerical data, and in the case of transcripts, the user should download the tables to inspect values of interest. The scales have been devised to accomodate the particular ranges of values in the database. For abundance values the white-to-black spectrum illustrated below is used. For FPKMs this has a 15-step log1.6 scale, but all values below 2 FPKM (considered background) are coloured white, and no discrimination is employed for values above 1150 FPKM (pure black).<br />
+	<img src="images/FPKMabundanceSpectrum.png" alt="" width="460" height="54" /><br />
+	For the generally higher TPM values of microRNAs a log2.6 scale is used with no indication of background:<br />
+	<img src="images/TPMSpectrum.png" alt="" width="460" height="54" /><br />
+	For enrichment values a divergent white/yellow/red spectrum is used:<br />
+	<img src="images/enrichmentSpectrum.png" alt="" width="450" height="54" /><br />
+	This employs an asymmetric log scale running from white to yellow (0-1) to represent genes with ‘decreased enrichment’, and then from yellow through orange and a wider range of reds to encompass values of ‘increased enrichment’.
+	</div>
+		<!-- 2.6 Results Options -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt2_6','hs2_6','&#9655;','&#9661;');" title="reveal help"><span id="bt2_6" class="helpTitle onOff">▷</span></a> Result Presentation Options</div>
+	<div id="hs2_6" class="conceal helpContent">The default presentation of the table containing the results of a query has been simplified for initial ease of inspection. Checkboxes provide options of more detailed information. <strong>SD</strong> appends standard deviations (based on triplicates) to the values. <strong>Whole Body</strong> includes the abundance values for whole flies. <strong>Male v. Female</strong> shows the said ratio  of abundances, in cases where the tissue is not sex-specific. Checkbox selections are retained in subsequent queries until changed.</div>
+		<!-- 2.10 correlating gene and transcript data -->
+		<div class="helpSubT"><a href="javascript:toggleConcealed('bt2_10','hs2_10','&#9655;','&#9661;');" title="reveal help"><span id="bt2_10" class="helpTitle onOff">▷</span></a> Correlating Gene and Transcript data</div>
+	<div id="hs2_10" class="conceal helpContent">The table with the transcript data is, of necessity, quite compact. However it is possible to highlight the part of the <em>transcript</em> table corresponding to a particular tissue by clicking/tapping on the cell in question in the <em>gene</em> table. Click/tap again to turn the highlighting off. (This does not apply to microRNAs, where the transcripts are presented in a different manner.)</div>
+		<!-- 2.7 Downloading Tables and Graphics -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt2_7','hs2_7','&#9655;','&#9661;');" title="reveal help"><span id="bt2_7" class="helpTitle onOff">▷</span></a> Downloading Tables and Graphics</div>
+	<div id="hs2_7" class="conceal helpContent">There are download icons below each of the tables of gene and transcript data. These generate files in <em>tab-separated</em> format with an extension ‘txt’. Such files will likely open in a text editor when double-clicked, but can be imported into open spreadsheet applications, such as <em>MS Excel</em>, <em>LibreOffice</em> or Apple's <em>Numbers</em>. The files can then be formatted and saved in the application’s native format, if required.</br> The microRNA bar chart can be downloaded in SVG format for editing in a suitable application such as Adobe Illustrator or Inkscape.</div>
+		<!-- 2.8 Links Out -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt2_8','hs2_8','&#9655;','&#9661;');" title="reveal help"><span id="bt2_8" class="helpTitle onOff">▷</span></a> Links Out</div>
+		<div id="hs2_8" class="conceal helpContent">The ‘name line’ above the results table contains a ‘link-out’ icon on its extreme right. Clicking this invokes a menu of options, the majority to third-party <em>Drosophila</em> resources. Note, however, that the first is to the corresponding gene results for <strong>FlyAtlas 1</strong> — <em>although only in cases where the gene is represented in that facility</em> (e.g. not for RNA genes of any sort).</div>
+		<!-- 2.15 Paralogues -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt2_15','hs2_15','&#9655;','&#9661;');" title="reveal help"><span id="bt2_15" class="helpTitle onOff">▷</span></a> Paralogues</div>
+		<div id="hs2_15" class="conceal helpContent">The ‘name line’ above the results table contains an item entitled ‘paralogues’. This allows one to view the results for the gene and any paralogues together (in the same format as for bulk searches). The list of paralogues is taken from FlyBase, and one should realize that it includes both close and distant homologues. The final cut-off is to some extent arbitrary, and it is ultimately up to the individual to perform his own sequence comparisons to decide on their biological significance.</div>
+		<!-- 2.9 UCSC Browser Link -->
+		<div class="helpSubT"><a href="javascript:toggleConcealed('bt2_9','hs2_9','&#9655;','&#9661;');" title="reveal help"><span id="bt2_9" class="helpTitle onOff">▷</span></a> View in UCSC Browser</div>
+	<div id="hs2_9" class="conceal helpContent">Transcript results provide an option to ‘View in UCSC Genome Browser’. Clicking this gives an explanatory page with a link to the gene of interest in the UCSC Browser, <em>with the reads from FlyAtlas 2 superimposed</em>. This is useful both for assessing the quality of the data for oneself, and for checking unique exons that define particular transcripts. To simplify the interface we have suppressed the reference tracks provided by UCSC and substituted our own custom track for the NCBI Reference Genome. It is labelled with gene symbols rather than transcript IDs, but the later can be seen by hovering over the gene. Any of the default tracks can be restored interactively by the user. You are strongly advised to read the explanatory page the first time you use this. We think that the facility offered by the UCSC Browser is excellent, but its richness means that it does require some effort on the user’s part. </div>
+		<!-- 2.11 In-page Help -->
+		<div class="helpSubT"><a href="javascript:toggleConcealed('bt2_11','hs2_11','&#9655;','&#9661;');" title="reveal help"><span id="bt2_11" class="helpTitle onOff">▷</span></a> In-page Help</div>
+	<div id="hs2_11" class="conceal helpContent">Clicking on the icons showing a question mark in a circle invokes in-page help about downloading tables and about correlating gene and transcript data, as explained above.</div>
+</div><!-- end of conceal div -->
+</div>
+<!-- End of 2nd Help section -->
+
+<div class="helpSec"> <!-- 3rd Help section: Questions & Problems -->
+<div class="helpTitle">
+<a href="javascript:toggleConcealed('bt3','hs3','&#9658;','&#9660;');" title="reveal help"><span id="bt3" class="helpTitle onOff">▶</span></a> Questions &amp; Problems
+</div>
+
+<div id="hs3" class="conceal">
+	<!-- 3.1 Gene not in database -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt3_1','hs3_1','&#9655;','&#9661;');" title="reveal help"><span id="bt3_1" class="helpTitle onOff">▷</span></a> Why is my Gene not in the Database?</div>
+	<div id="hs3_1" class="conceal helpContent">First, make sure that the appropriate name or identifier has been selected, start typing, and check the autocomplete for related spellings. If this fails it is possible that you are using a discontinued or superseded designation or one that is newer than the reference genome used for the database. Check by searching in <em>FlyBase</em> for the gene designation you used.</div>
+	<!-- 3.10 Ambiguous transcripts -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt3_10','hs3_10','&#9655;','&#9661;');" title="reveal help"><span id="bt3_10" class="helpTitle onOff">▷</span></a> What are ‘ambiguous’ transcripts and how do I deal with them?</div>
+	<div id="hs3_10" class="conceal helpContent">THE SITUATION: The results for over 4% of genes are problematic because they relate to single unique transcripts that are represented by more than one FlyBase identifier. We refer to these latter as ‘ambiguous transcripts’.<br>
+HOW CAN THIS HAPPEN? For each individual protein or putative protein in FlyBase a transcript with a unique identifier is generated. Thus, in the rare cases where a single transcript encodes more than one protein, that transcript will exist in FlyBase as more than one transcript, each with a unique identifier.<br>
+THE SCIENTIFIC BACKGROUND: The standard mechanism for translation of mRNA differs markedly between bacterial and eukaryotic cells. Bacterial mRNAs are of the polycistronic type, with a separate ribosome-binding site for the individual translational initiation codons for the distinct protein products of the cistrons/genes. Eukaryotic mRNAs are normally mono-cistronic because initiation of translation normally involves the ribosome scanning from the 5′-end until it reaches the first (or first suitable) initiation codon. However a small portion of eukaryotic mRNAs are dicistronic or even polycistronic. A separate phenomenon is that for certain eukaryotic mRNAs the ribosome sometimes initiates translation at one initiation codon, but in others at a subsequent (in-frame) initiation codon. Likewise for certain eukaryotic mRNAs the ribosome can read-through the first termination codon and terminate at a subsequent termination codon or codons.<br>
+HOW DOES RNA-SEQ TREAT SUCH CASES? RNA-Seq looks for reads which map to a particular transcript sequence as defined in the reference genome used. If, as in the cases just outlined, two or more named transcripts have the same nucleotide sequence because they represent the same mRNA species, the data will be assigned to only one of the named transcripts.<br>
+HOW DOES FLYATLAS 2 RESPOND TO SUCH SITUATIONS? FlyAtlas 2 flags the results of such ambiguous situations in the results page for any affected gene. It flags both ‘masked’ transcripts — those for which any data have been assigned to another transcript identifier — and ‘masking’ transcripts — those for which the data may include those for transcripts with other identifiers.<br>
+HOW PREVALENT IS THIS IN FLYATLAS 2? There are 620 transcripts assigned to one of 294 unique di- or poly-cistronic mRNAs, affecting 438 genes (with two additional possibles). There are 70 transcripts assigned to one of 35 unique mRNAs in which alternative proteins occur or have been predicted to occur from the use of alternative in-frame initiation codons. There are 735 transcripts assigned to one of 349 unique mRNAs in which alternative proteins occur or have been predicted to occur from the use of alternative termination codons. There is also one case in which alternative products are generated due to a frameshift before a termination codon.<br>
+WHAT CAN BE DONE IN SUCH CASES? First it should be made clear that there is no way that RNA-Seq analysis can indicate the relative amounts of different proteins translated from a single mRNA. In the case of dicistronic mRNAs, <em>lack</em> of expression of a particular transcript in a tissue would allow one to conclude that the genes are not expressed there (unless an additional mono-cistronic transcript exists). In the cases of start or stop codon readthrough of the mRNA for a single gene the values for the total FPKMs for that gene, presented in the gene results table, would still be valid.</div>
+	<!-- 3.3 Tissues -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt3_3','hs3_3','&#9655;','&#9661;');" title="reveal help"><span id="bt3_3" class="helpTitle onOff">▷</span></a> What is the situation regarding Tissue Comparability?</div>
+	<div id="hs3_3" class="conceal helpContent">Adult fat body, spermatheca and heart, and larval garland cells were sequenced using a different chemistry from the other tissues. The results for these tissues are comparable within this group, but not with other tissues. The identification of their individual transcripts is also less rigorous.</div>
+	<!-- 3.4 RNA genes -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt3_4','hs3_4','&#9655;','&#9661;');" title="reveal help"><span id="bt3_4" class="helpTitle onOff">▷</span></a> What about RNA genes?</div>
+	<div id="hs3_4" class="conceal helpContent">Unlike Fly Atlas 1, FlyAtlas 2 includes data for genes that are transcribed into RNA that does not encode protein. There are different classes of such genes, and the reliability of the results varies with the class. The microRNA genes were analysed separately, and we regard the results for them as reliable as those for protein genes. Some other RNA genes are too small to be detected in the total-RNA work-up, some large genes may overlap protein coding genes and should be examined using the UCSC browser. Genes and pseudogenes for tRNAs and rRNAs have now been removed from FlyAtlas 2, as the data from them was judged to be unreliable. Note also that the method of analysis provides no data for the stem-loop precursors of microRNA; only for the two mature cleaved portions.</div>
+	<!-- 3.5 NA -->
+		<div class="helpSubT"><a href="javascript:toggleConcealed('bt3_5','hs3_5','&#9655;','&#9661;');" title="reveal help"><span id="bt3_5" class="helpTitle onOff">▷</span></a> Why are some results marked ‘N.A.’?</div>
+	<div id="hs3_5" class="conceal helpContent">Generally this is because the data are ‘Not Available’ as the Cuffdiff program flagged their status as other than ‘OK’. Most of the genes involved do not encode proteins. (The sequence reads can still be inspected in the UCSC Browser.) In other cases it is used where no value of enhancement has been presented because the FPKM value was less than 2, the value used as for cutoff above background.</div>
+	<!-- 3.8 M v. F -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt3_8','hs3_8','&#9655;','&#9661;');" title="reveal help"><span id="bt3_8" class="helpTitle onOff">▷</span></a> Male and Female Abundances and Enhancements seem Inconsistent</div>
+	<div id="hs3_8" class="conceal helpContent">For male/female <em>comparisons</em> of a gene in a particular tissue, only abundances are meaningful. This is because enhancements are related to expression in whole flies, where males and females obviously differ, most pertinently in the large contribution made by the ovaries of the female.</div>
+	<!-- 3.9 The FlyAtlas 2 v FlyAtlas 1 -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt3_9','hs3_9','&#9655;','&#9661;');" title="reveal help"><span id="bt3_9" class="helpTitle onOff">▷</span></a> FlyAtlas 1 and 2 give different Results for my Gene</div>
+	<div id="hs3_9" class="conceal helpContent">The differentially expressed genes identified in the original FlyAtlas work are generally corroborated by FlyAtlas 2. However it would be surprising if there were not some inconsistencies in data for so many genes. It is worth emphasizing some of the limitations of the  previous microarray approach. Thus, although microarray probe-sets were designed to be specific for individual genes, in many cases they turned out not to be so, and the data for over 700 genes in FlyAtlas 1 were ambiguous and are so marked in the FlyAtlas 2013 facility. Some genes were detected by more than one probe-set, but with marked differences in signal, suggesting that the probe-sets for some other genes may not have been optimal. Nevertheless, do not hesitate to use the Feedback Form let us know of any discrepancies that you feel are cause for concern.</div>
+	<!-- 3.6 Mobile limitations -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt3_6','hs3_6','&#9655;','&#9661;');" title="reveal help"><span id="bt3_6" class="helpTitle onOff">▷</span></a> Why are some Features not available on Mobile?</div>
+	<div id="hs3_6" class="conceal helpContent">We designed the FlyAtlas 2 web application so that it responded to the decrease in viewing area of mobile devices by maintaining core  functionality but dispensing with some secondary features. Thus, on tablets the ‘link-out’ options (including to the UCSC browser) are not available. Selecting ‘Request Desktop Site’ from the options in your mobile web browser may — depending on your device — give you access to these features.</div>
+	<!-- 3.7 Other Questions -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt3_7','hs3_7','&#9655;','&#9661;');" title="reveal help"><span id="bt3_7" class="helpTitle onOff">▷</span></a> My Problem or Question is not covered here</div>
+	<div id="hs3_7" class="conceal helpContent">If you have a question or a problem that is not covered here, let us know using the feedback form. We shall try to respond within 24 hours, although circumstances may sometimes prevent this.</div>
+</div><!-- end of conceal div -->
+</div> <!-- End of Third Help section -->
+
+<!-- 4th Help section: Technical -->
+<div class="helpSec">
+<div class="helpTitle">
+<a href="javascript:toggleConcealed('bt4','hs4','&#9658;','&#9660;');" title="reveal help"><span id="bt4" class="helpTitle onOff">▶</span></a> FlyAtlas 2 &amp; Third-party Data — Technical &amp; Versioning
+</div>
+
+<div id="hs4" class="conceal">
+	<!-- 4.1 Insects -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt4_1','hs4_1','&#9655;','&#9661;');" title="reveal help"><span id="bt4_1" class="helpTitle onOff">▷</span></a> Insects</div>
+	<div id="hs4_1" class="conceal helpContent">Insects were wild-type Canton S <em>Drosophila melanogaster</em>, reared at 22˚C on a 12:12 h light regime on standard <em>Drosophila</em> diet. Larvae were third instar, crawling, and adults were one week after  emergence. Tissue dissection was as previously described by Chintapalli, V. <em>et al.</em> (2007) <em>Nature Genetics</em>, <strong>39</strong>, 715–720.</div>
+	<!-- 4.6 Biological Replicates -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt4_6','hs4_6','&#9655;','&#9661;');" title="reveal help"><span id="bt4_6" class="helpTitle onOff">▷</span></a> Biological Replicates</div>
+	<div id="hs4_6" class="conceal helpContent">
+	The biological replicates for individual tissues were analysed using the same technology. Most of the data are for biological <em>triplicates</em>, but the following are for <em>duplicates</em>:<br />
+Adult male and female Crop<br />
+Adult male and female Eye<br />
+Adult female Rectal Pad<br />
+Adult male and female Salivary Gland<br />
+Adult male and female Thoracicoabdominal Ganglion
+	</div>
+	<!-- 4.2 RNA-Seq -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt4_2','hs4_2','&#9655;','&#9661;');" title="reveal help"><span id="bt4_2" class="helpTitle onOff">▷</span></a> RNA-Seq</div>
+	<div id="hs4_2" class="conceal helpContent">RNA was isolated in triplicate using the Qiagen miRNeasy kit, with separate libraries prepared for total RNA or microRNA sequencing. The quality of RNA samples was analysed using an Agilent Bioanalyzer. Most of the tissues were sequenced by Edinburgh Genomics, using Illumina TruSeq technology for whole RNA. Adult Fat Body, Spermatheca and Heart, and larval Garland cells were sequenced by Glasgow Polyomics using Clontech SMARTer Pico Input methodology for the small amounts of RNA available. Different chemistries were also used with different tissues for microRNAs.</div>
+	<!-- 4.3 Computational Analysis -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt4_3','hs4_3','&#9655;','&#9661;');" title="reveal help"><span id="bt4_3" class="helpTitle onOff">▷</span></a> Computational Analysis</div>
+	<div id="hs4_3" class="conceal helpContent">Total RNA was analysed using the Tuxedo pipeline (Trapnell <em>et al.</em> (2012) <em>Nature Protocols</em> <strong>7</strong>, 562–578) and the <em>Drosophila</em> Release 6 reference genome (NCBI_Assembly:GCF_000001215.4, annotations from FlyBase Release 6.54 — December 2023). Data for all tissues were normalized together using Cuffdiff. MicroRNA was originally analysed using CapMirSeq, but in August 2022 was reanalysed for all tissues using sRNAPipe (Pogorelcnik <em>et al.</em> (2018) <em>Mobile DNA</em> <strong>9:25</strong>).</div>
+	<!-- 4.4 DBs etc. -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt4_4','hs4_4','&#9655;','&#9661;');" title="reveal help"><span id="bt4_4" class="helpTitle onOff">▷</span></a> FlyAtlas 2 Database &amp; Third-Party Data</div>
+	<div id="hs4_4" class="conceal helpContent">The RNA-Seq data were loaded into a MySQL database, which underlies this web application. It uses gene information from <em>Drosophila</em> Release 6 reference genome (Santos <em>et al.</em> (2015) <em>Nucleic Acids Research</em> <strong>43</strong>, D690–D697) and gene ontology information from FlyBase (flybase.org) and the Gene Ontology Consortium (www.geneontology.org). </div>
+	<!-- 4.5 Versions -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt4_5','hs4_5','&#9655;','&#9661;');" title="reveal help"><span id="bt4_5" class="helpTitle onOff">▷</span></a> Version Information</div>
+	<div id="hs4_5" class="conceal helpContent">
+DATABASE VERSION HISTORY<br />
+The history of the various updates to the downloadable FlyAtlas2.sql database is shown with version numbers based on dates in yy.mm.dd format. Current versions of constituent third-party data are shown below this.<br />
+FlyAtlas2_25.03.03.sql: Transcript ambiguity table added to enable flagging in results.<br />
+FlyAtlas2_25.01.24.sql: Reanalysed data against NCBI:GCF_000001215.4 reference genome (Dec 2023) and updated database. Removed all tRNA and rRNA genes.<br />
+FlyAtlas2_25.01.08.sql: Bug fix for statistical comparison of male v. female where some significant differences had previously been missed.<br />
+FlyAtlas2_24.01.08.sql: Paralogue flag added to Gene table for revised paralogue code. (Live from 24.03.07.) <br />
+FlyAtlas2_23.06.29.sql: Table of paralogues added.<br />
+FlyAtlas2_22.10.14.sql: MicroRNA precursors (RM forms) removed from database.<br />
+FlyAtlas2_22.09.23.sql: Previous MicroRNA data replaced by normalized TPM data. Mitochondrial genes and their transcripts removed.<br />
+FlyAtlas2_22.08.02.sql: Heart and Garland cell MicroRNA data added, and all data reanalysed using sRNAPipe. RM forms included and some newly identified microRNAs added.<br />
+FlyAtlas2_21.09.30.sql: FlyBase Groups updated.<br />
+FlyAtlas2_21.09.27.sql: Additional profiles added.<br />
+FlyAtlas2_21.09.19.sql: Gene nomenclature update to FlyBase FB2021_04.<br />
+FlyAtlas2_21.08.09.sql: Larval Garland Cell FPKMs added.<br />
+FlyAtlas2_21.04.18.sql: Male and Female Heart FPKMs added.<br />
+FlyAtlas2_19.10.15.sql: MicroRNA genes and transcripts revised to include RA and RB forms and exclude RM forms. Data re-normalized.<br />
+FlyAtlas2_19.09.18.sql: MicroRNA data added for adult Crop, Fat Body, Salivary Gland and Spermatheca.<br />
+FlyAtlas2_19.09.02.sql: MicroRNA data revised for Eye and Thoracicoabdominal Ganglion. (Replaces 19.08.31)<br />
+FlyAtlas2_19.08.31.sql: MicroRNA data added for Eye and Thoracicoabdominal Ganglion.<br />
+FlyAtlas2_19.08.19.sql: Tissue replicate numbers adjusted as described in <em>Biological Replicates</em>.<br />
+FlyAtlas2_19.07.01.sql: Male and Female Fat Body FPKMs added.<br />
+FlyAtlas2_19.04.10.sql: Gene Names and Symbols updated to FlyBase versions 2019_01.<br />
+FlyAtlas2_19.03.04.sql: Third replicate of Male and Female eye and salivary gland FPKMs added.<br />
+FlyAtlas2_18.08.15.sql: Virgin and Mated Spermatheca FPKMs added.<br />
+FlyAtlas2_18.05.25.sql: Male and Female crop, eye, salivary gland and thoracicoabdominal ganglion FPKMs added (2 replicates).<br />
+FlyAtlas2_18.05.25.sql: Field for Cuffdiff ‘status‘ values added to GeneFPKM and TranscriptFPKM tables.<br />
+FlyAtlas2_18.05.05.sql: New Female Head replicate substituted for one of previous.<br />
+FlyAtlas2_18.05.05.sql: Anatomical nomenclature correction: ‘Anal Pad’ changed to ‘Rectal Pad’.<br />
+FlyAtlas2_17.11.09.sql: Male and Female brain and anal pad, and Male accessory gland RPMs added for microRNAs.<br />
+FlyAtlas2_17.10.07.sql: gene_association.fb FBgn/GOid pairs qualified by ‘NOT’ removed.<br />
+FlyAtlas2_17.10.05.sql: Male and Female brain and anal pad, and Male accessory gland FPKMs added.<br />
+FlyAtlas2_17.10.04.sql: Gene symbol, names and annotation symbols updated to FlyBase FB2017_04.<br />
+GENE DATA<br />
+The Drosophila Reference Genome (Ensembl) defines the FBgn numbers of the genes in the database. The gene symbols and names associated with the FBgns are derived from two FlyBase files and are updated in concert with the reference genome. The current versions in FlyAtlas2 are:<br />
+NCBI:GCF_000001215.4: December 2023<br />
+fbgn_annotation_ID_fb_2024_06.tsv<br />
+gene_snapshots_fb_2024_06.tsv<br />
+ONTOLOGY DATA<br />
+The list of GO ids and associated names is obtained from the go-basic.obo file at http://geneontology.org. The correlation between <em>Drosophila</em> FBgn identifiers and GO identifiers is made using the FlyBase gene association file. The current versions in FlyAtlas2 are:<br />
+go-basic.obo.txt : 01.09.2021<br />
+gene_association.fb : 04.08.2021<br />
+PARALOGUE DATA<br />
+The list of paralogues is also from FlyBase — the current version in the database is given below.<br />
+dmel_paralogs_fb : 14.11.2022<br />
+</div>
+</div><!-- end of conceal div -->
+</div>
+<!-- End of 4th Help section -->
+
+<!-- 5th Help section: Citation and Data Availability -->
+<div class="helpSec">
+<div class="helpTitle">
+<a href="javascript:toggleConcealed('bt5','hs5','&#9658;','&#9660;');" title="reveal help"><span id="bt5" class="helpTitle onOff">▶</span></a> Citing FlyAtlas 2 &amp; Data Availability
+</div>
+
+<div id="hs5" class="conceal">
+	<!-- 5.1 Citing -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt5_1','hs5_1','&#9655;','&#9661;');" title="reveal help"><span id="bt5_1" class="helpTitle onOff">▷</span></a> Citing FlyAtlas 2</div>
+	<div id="hs5_1" class="conceal helpContent">In any published work relying on these data, please cite: Krause, S. A., Overend, G., Dow, J. A.T. and Leader, D. P. (2020) FlyAtlas 2 in 2022: enhancements to the Drosophila melanogaster expression atlas. <em>Nucleic Acids Research</em> <strong>50</strong> D1010–D1015. Free access to this paper is available <a href="javascript:linkToPaper('https://academic.oup.com/nar/article/50/D1/D1010/6414055?guestAccessKey=c6950860-16a6-41e5-8db1-03ba89e5d811');" title="Show NAR paper in new window">here</a>.</div>
+	<!-- 5.2 Authorship -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt5_2','hs5_2','&#9655;','&#9661;');" title="reveal help"><span id="bt5_2" class="helpTitle onOff">▷</span></a> Authorship and Acknowledgements</div>
+	<div id="hs5_2" class="conceal helpContent">This work was conceived by Julian Dow and Shireen Davies, and supported by grant BB/K019953/1 from the BBSRC. The biological work was performed by Sue Krause and Gayle Overend (midgut regions), the bioinformatics, database and web construction by David Leader, and the microRNA analysis by Aniruddha Pandit and Ahmed Khalid Omar. RNA sequencing was carried out by Edinburgh Genomics, partly supported through core grants from NERC (R8/H10/56), MRC(MR/K001744/1) and BBSRC (BB/J004243/1). We thank the support teams at FlyBase and UCSC Browser (genome.ucsc.edu) for help in making use of their facilities.</div>
+	<!-- 5.3 Data Availability -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt5_3','hs5_3','&#9655;','&#9661;');" title="reveal help"><span id="bt5_3" class="helpTitle onOff">▷</span></a> Data Availability</div>
+	<div id="hs5_3" class="conceal helpContent">• RNA-Seq data have been deposited at the European Nucleotide Archive under accession numbers PRJEB22205 (Main), PRJEB11865 (Midgut) and PRJEB48667 (Garland cells).<br />
+	• The latest version of the FlyAtlas 2 database can be downloaded from:<br /> motif.mvls.gla.ac.uk/downloads/FlyAtlas2_2025.03.03.sql .<br />
+	• An Excel workbook containing the gene data can be downloaded from:<br /> motif.mvls.gla.ac.uk/downloads/FlyAtlas2_gene_data_2025.xlsx .</div>
+	<!-- 5.4 Linking -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt5_4','hs5_4','&#9655;','&#9661;');" title="reveal help"><span id="bt5_4" class="helpTitle onOff">▷</span></a> Linking to FlyAtlas 2</div>
+	<div id="hs5_4" class="conceal helpContent">
+	You are welcome to link to FlyAtlas 2 from your own website.<br />
+	If you wish to link directly to the results of a search for a specific gene you need to provide the two parameters, <span class="colour2">GENE_ID</span> and <span class="colour1">ID_TYPE</span>, in a query of the type:
+	<p class="url">https://motif.mvls.gla.ac.uk/FlyAtlas2/index.html?search=gene&gene=<span class="colour2">GENE_ID</span>&idtype=<span class="colour1">ID_TYPE</span></p>
+	where:<br />
+	<span class="colour2">GENE_ID</span> is the identifier appropriate to the ID type.<br />
+	<span class="colour1">ID_TYPE</span> can be any of ‘fbgn’, ‘cgnum’, ‘symbol’ or ‘name’.<br />
+	e.g.
+	<p class="url">https://motif.mvls.gla.ac.uk/FlyAtlas2/index.html?search=gene&gene=<span class="colour2">FBgn0016075</span>&idtype=<span class="colour1">fbgn</span> </p>
+	<p class="url">https://motif.mvls.gla.ac.uk/FlyAtlas2/index.html?search=gene&gene=<span class="colour2">CG16858</span>&idtype=<span class="colour1">cgnum</span> </p>
+	<p class="url">https://motif.mvls.gla.ac.uk/FlyAtlas2/index.html?search=gene&gene=<span class="colour2">vkg</span>&idtype=<span class="colour1">symbol</span> </p>
+	<p class="url">https://motif.mvls.gla.ac.uk/FlyAtlas2/index.html?search=gene&gene=<span class="colour2">viking</span>&idtype=<span class="colour1">name</span> </p>
+	</div>
+	
+	<!-- 5.5 Direct Download -->
+	<div class="helpSubT"><a href="javascript:toggleConcealed('bt5_5','hs5_5','&#9655;','&#9661;');" title="reveal help"><span id="bt5_5" class="helpTitle onOff">▷</span></a> Direct Data Download</div>
+	<div id="hs5_5" class="conceal helpContent">The results tables for individual genes and transcripts can be downloaded directly without the need for a web browser. Automating this should allow batch downloads, not currently available through the web interface. To do this you need to provide the two parameters, <span class="colour2">FBGN</span> and <span class="colour1">DATA_TYPE</span>, in a query of the type:
+	<p class="url">https://motif.mvls.gla.ac.uk/FA2Direct/index.html?fbgn=<span class="colour2">FBGN</span>&tableOut=<span class="colour1">DATA_TYPE</span></p>
+	where:<br />
+	<span class="colour2">FBGN</span> is the FlyBase gene identifier only.<br />
+	<span class="colour1">DATA_TYPE</span> can be ‘gene’, ‘transcriptGene’, ‘mir’ or ‘transcriptMir’; i.e. for gene or transcript data for normal genes or microRNAs.<br />
+	e.g.
+	<p class="url">https://motif.mvls.gla.ac.uk/FA2Direct/index.html?fbgn=<span class="colour2">FBgn0016075</span>&tableOut=<span class="colour1">gene</span></p>
+	<p class="url">https://motif.mvls.gla.ac.uk/FA2Direct/index.html?fbgn=<span class="colour2">FBgn0016075</span>&tableOut=<span class="colour1">transcriptGene</span></p>
+	<p class="url">https://motif.mvls.gla.ac.uk/FA2Direct/index.html?fbgn=<span class="colour2">FBgn0262177</span>&tableOut=<span class="colour1">mir</span></p>
+	<p class="url">https://motif.mvls.gla.ac.uk/FA2Direct/index.html?fbgn=<span class="colour2">FBgn0262177</span>&tableOut=<span class="colour1">transcriptMir</span></p>
+	</div>
+
+</div><!-- end of conceal div -->
+</div> <!-- End of Fifth Help section -->

@@ -1,0 +1,9 @@
+// uniTissuesMG.txt - Input file for MidgutAtlas TissueLists class
+
+// DisplayPosition	 uniTissue
+
+1	caeca
+2	acidic
+3	neutral
+4	transitional
+5	alkaline
