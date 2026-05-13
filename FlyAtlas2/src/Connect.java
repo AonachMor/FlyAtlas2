@@ -10,8 +10,8 @@ import java.sql.*;
 public class Connect
 {
 	Connection conn = null;	
-	String username = "charles";
-	String password = "atlas";
+	String username = "xxxxxx";
+	String password = "xxxxxx";
 	String defaultHost = "jdbc:mysql://localhost/FlyAtlas2?useUnicode=true&characterEncoding=UTF-8";
 	//String defaultHost = "jdbc:mysql://localhost/FlyAtlas2AG?useUnicode=true&characterEncoding=UTF-8";		// test of new DB
 	
